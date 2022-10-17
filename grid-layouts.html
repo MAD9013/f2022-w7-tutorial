@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid Areas | W7 - CSS Grid</title>
     <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/grid-layouts.css" />
+    <link rel="stylesheet" href="./css/grid-layouts-complete.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,400;1,800&display=swap"
       rel="stylesheet"
@@ -39,7 +39,7 @@
       <!-- ---------- TUTORIAL CONTENT ---------- -->
 
       <section>
-        <div class="container container-side-padding">
+        <div class="container">
           <h1>Grid Layouts</h1>
 
           <!-- ---------- GRID LAYOUTS ---------- -->
@@ -128,14 +128,14 @@
           </ul>
 
           <h2 class="padding-t">Split Content Layout</h2>
-          <div class="split-content grid">
-            <div class="split-content-img xs-1 m-1-3 l-1-2">
+          <div class="split-content">
+            <div class="split-content-img">
               <img
                 src="https://placedog.net/1000/1000?random"
                 alt="A random dog!"
               />
             </div>
-            <div class="split-content-text xs-1 m-2-3 l-1-2">
+            <div class="split-content-text">
               <h3>Split Content Heading</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -153,12 +153,29 @@
 
       <!-- ---------- GRID CONTAINERS ---------- -->
 
-      <section class="grid-container parent-styles">
+      <section>
+        <div class="container container--grid">
+          <div class="contained-text--center">
+            <h2>Full Width Grid Container</h2>
+            <p>
+              We can use <code>display: grid;</code> in combination with out basic <code>.container</code> class to create a more powerful container that applies a eady to use grid.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              reiciendis ea cupiditate incidunt nulla qui modi amet officiis
+              expedita debitis cumque inventore nam ipsam voluptas earum, ipsum
+              quis. Iste, eveniet?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-container-full parent-styles">
         <div class="contained">
-          <h2>Grid Containers</h2>
+          <h2>Full Width Grid Container</h2>
           <p>
             We can use <code>display: grid;</code> to make a pretty great
-            flixible container for our content.
+            full-width flexible container for our content.
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit

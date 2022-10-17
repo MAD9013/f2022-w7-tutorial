@@ -97,18 +97,15 @@ main {
 }
 
 .container {
-  max-width: 70em;
+  width: min(70em, 100%);
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 section > .container {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.container-side-padding {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .padding-t {
@@ -209,7 +206,6 @@ section > .container {
 }
 
 .masthead .container {
-  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -364,10 +360,6 @@ section > .container {
   background-color: #222;
   color: #fff;
   padding: 2rem 0;
-}
-
-.footer .container {
-  padding: 0 1rem;
 }
 
 .footer a {
